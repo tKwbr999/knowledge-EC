@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next build && next start",
+    "lint": "next lint",
+    "test": "APP_ENV=test playwright test"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.6",
